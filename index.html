@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onmyoji: Charmbound</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hud">
+        <h1>ONMYOJI: CHARMBound</h1>
+        <p class="tagline">
+          A dark isometric hunt where a shaman seals fallen demons inside ritual paper charms.
+        </p>
+
+        <div class="panel">
+          <h2>Starter Demons</h2>
+          <div id="starterChoices" class="starters"></div>
+        </div>
+
+        <div class="panel stats">
+          <h2>Hunt Status</h2>
+          <p><strong>Shaman</strong>: Rei Kurogami</p>
+          <p><strong>Bound Charms</strong>: <span id="charms">0</span></p>
+          <p><strong>Current Ally</strong>: <span id="allyName">None</span></p>
+          <p><strong>Enemy</strong>: <span id="enemyName">Abyss Wraith</span></p>
+          <p><strong>Enemy HP</strong>: <span id="enemyHp">100</span></p>
+        </div>
+
+        <div class="panel controls">
+          <h2>Battle Actions</h2>
+          <button id="attackBtn">Shadow Strike</button>
+          <button id="trapBtn">Seal in Charm</button>
+          <button id="resetBtn">New Hunt</button>
+          <p id="log" class="log">Choose a starter demon before entering combat.</p>
+        </div>
+      </section>
+
+      <section class="stage">
+        <canvas id="game" width="920" height="620" aria-label="Isometric pixel art scene"></canvas>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
